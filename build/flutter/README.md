@@ -1,4 +1,4 @@
-# etemac-calculadora-frequencia
+# ETEMAC-CALCULADORA-FREQUENCIA
 
 
 
@@ -6,8 +6,8 @@
 
 * `etemac_calculadora_frequencia` - project identifier (lowercase, no spaces, i.e. "snake_case") used for bundle IDs and package names.
 * `` - project description.
-* `etemac-calculadora-frequencia` - executable or bundle name on disk.
-* `etemac-calculadora-frequencia` - display name shown in window titles and about app dialogs.
+* `ETEMAC-CALCULADORA-FREQUENCIA` - executable or bundle name on disk.
+* `ETEMAC-CALCULADORA-FREQUENCIA` - display name shown in window titles and about app dialogs.
 * `com.flet` - org name in reverse domain name notation, e.g. `com.mycompany.myproject`.
 * `Your Company` - the name of the company.
 * `Copyright (c) 2026 Your Company` - the copyright notice.

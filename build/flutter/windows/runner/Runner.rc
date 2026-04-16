@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "Your Company" "\0"
-            VALUE "FileDescription", "etemac-calculadora-frequencia" "\0"
+            VALUE "FileDescription", "ETEMAC-CALCULADORA-FREQUENCIA" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "etemac-calculadora-frequencia" "\0"
+            VALUE "InternalName", "ETEMAC-CALCULADORA-FREQUENCIA" "\0"
             VALUE "LegalCopyright", "Copyright (c) 2026 Your Company" "\0"
-            VALUE "OriginalFilename", "etemac-calculadora-frequencia.exe" "\0"
-            VALUE "ProductName", "etemac-calculadora-frequencia" "\0"
+            VALUE "OriginalFilename", "ETEMAC-CALCULADORA-FREQUENCIA.exe" "\0"
+            VALUE "ProductName", "ETEMAC-CALCULADORA-FREQUENCIA" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

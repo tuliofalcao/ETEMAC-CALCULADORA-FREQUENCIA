@@ -10,6 +10,8 @@ def main(page: ft.Page):
     page.scroll = "adaptive"
     page.window_width = 1100 
     page.bgcolor = "#FDFDFD"
+    page.zoom = 1.5
+    page.update()
 
     # Dados da sua lógica POO
     meses_dados = dias.inicio()

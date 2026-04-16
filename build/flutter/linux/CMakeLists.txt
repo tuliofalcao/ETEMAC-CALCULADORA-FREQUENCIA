@@ -84,7 +84,7 @@ add_dependencies(${BINARY_NAME} flutter_assemble)
 # the default top-level location.
 set_target_properties(${BINARY_NAME}
   PROPERTIES
-  OUTPUT_NAME "etemac-calculadora-frequencia"
+  OUTPUT_NAME "ETEMAC-CALCULADORA-FREQUENCIA"
   RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/intermediates_do_not_run"
 )
 

@@ -1,17 +1,16 @@
-[project]
+[tool.poetry]
 name = "etemac-calculadora-frequencia"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "tuliofalcao",email = "falcao.tulio@gmail.com"}
-]
+authors = ["tuliofalcao <falcao.tulio@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "flet (>=0.84.0,<0.85.0)"
-]
+packages = [{include = "etemac_calculadora_frequencia"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flet = {extras = ["all"], version = "^0.84.0"}
 
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
