@@ -98,7 +98,7 @@ def main(page: ft.Page):
             [
                 # Logo
                 ft.Container(
-                    content=ft.Image(src="/etemac.png", width=300, height=300, fit="contain"),
+                    content=ft.Image(src="etemac.png", width=300, height=300, fit="contain"),
                     padding=ft.padding.only(top=20)
                 ),
                 
