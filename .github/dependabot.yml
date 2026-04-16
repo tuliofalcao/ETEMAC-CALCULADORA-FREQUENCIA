@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Monitora as dependências do Python na raiz
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # Aqui ignoramos a pasta de build para evitar os erros que você viu
+  - package-ecosystem: "npm"
+    directory: "/build/web/pyodide"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0 # Isso impede que ele tente abrir novos PRs para essa pasta
