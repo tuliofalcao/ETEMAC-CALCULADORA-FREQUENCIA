@@ -1,8 +1,0 @@
-Running build hooks...Running build hooks...Running package command
-Extra PyPi indexes: [https://pypi.flet.dev, http://127.0.0.1:52841/simple]
-Created temp directory: C:\Users\Escola\AppData\Local\Temp\serious_python_temp9713d9d9
-Copying Python app from C:\Users\Escola\projetos\etemac\ETEMAC-CALCULADORA-FREQUENCIA to a temp directory
-Creating app archive at C:\Users\Escola\projetos\etemac\ETEMAC-CALCULADORA-FREQUENCIA\build\flutter\app/app.zip from a temp directory
-Writing app archive hash to C:\Users\Escola\projetos\etemac\ETEMAC-CALCULADORA-FREQUENCIA\build\flutter\app/app.zip.hash
-Deleting temp directory
-Shutting down Pyodide PyPI server
