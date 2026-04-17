@@ -1,3 +1,12 @@
+import sys
+
+if 'flet' not in sys.modules and sys.platform == 'emscripten':
+    import micropip
+    import asyncio
+    async def install_flet():
+        await micropip.install("flet")
+    asyncio.run(install_flet())
+    
 import flet as ft
 from mes import Mes
 import dias
