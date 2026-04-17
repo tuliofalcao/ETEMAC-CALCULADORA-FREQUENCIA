@@ -1,23 +1,37 @@
-name: Deploy Flet Web to Pages
+name: Deploy Flet App to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    branches: [ main ] # Dispara o build sempre que você der push na main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          # É aqui que corrigimos o erro 404:
-          path: 'build/web'
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install poetry
+          poetry install
+
+      - name: Build Flet Web
+        run: |
+          # O segredo: o build roda em um ambiente linux limpo
+          poetry run flet build web src --base-url /ETEMAC-CALCULADORA-FREQUENCIA/
+
+      - name: Add .nojekyll
+        run: touch src/build/web/.nojekyll
+
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: src/build/web # A pasta que o Action vai "transplantar" sozinha
+          branch: gh-pages      # A branch de destino
