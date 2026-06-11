@@ -8,7 +8,7 @@ packages = [{include = "etemac_calculadora_frequencia"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-flet = {extras = ["all"], version = "^0.84.0"}
+flet = {extras = ["all"], version = ">=0.84,<0.86"}
 
 
 [build-system]
